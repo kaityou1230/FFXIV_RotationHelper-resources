@@ -1,0 +1,240 @@
+_Action.xlsx 복사 (x.Action_XXX.xlsx)
+아래 필터로 직업 검색 (ffxivrotation 에서 갯수 확인)
+이름을 디버깅툴에 입력 하면 파판 스킬코드가 DB 스킬코드로 변경됨
+(DB 코드로 변환된것 Ctrl+V)
+
+ActionTable.csv
+hex		,dec
+파판 스킬코드	,DB 스킬코드
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+To ffxivrotations.com
+미아즈라가 웹페이지에 없음 (db상엔 존재)
+오타 (Chain Strategem -> Chain Stratagem)
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ClassJob
+0	adventurer
+1	gladiator
+2	pugilist
+3	marauder
+4	lancer
+5	archer
+6	conjurer
+7	thaumaturge
+8	carpenter
+9	blacksmith
+10	armorer
+11	goldsmith
+12	leatherworker
+13	weaver
+14	alchemist
+15	culinarian
+16	miner
+17	botanist
+18	fisher
+19	paladin
+20	monk
+21	warrior
+22	dragoon
+23	bard
+24	white mage
+25	black mage
+26	arcanist
+27	summoner
+28	scholar
+29	rogue
+30	ninja
+31	machinist
+32	dark knight
+33	astrologian
+34	samurai
+35	red mage
+36	blue mage
+37	gunbreaker
+38	dancer
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ActionCategory
+0	
+1	Auto-attack
+2	Spell
+3	Weaponskill
+4	Ability
+5	Item
+6	DoL Ability
+7	DoH Ability
+8	Event
+9	Limit Break
+10	System
+11	Artillery
+12	Mount
+13	Glamour
+14	Item Manipulation
+15	Adrenaline Rush
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ClassJobCategory
+0	
+1	All Classes
+2	GLA
+3	PGL
+4	MRD
+5	LNC
+6	ARC
+7	CNJ
+8	THM
+9	CRP
+10	BSM
+11	ARM
+12	GSM
+13	LTW
+14	WVR
+15	ALC
+16	CUL
+17	MIN
+18	BTN
+19	FSH
+20	PLD
+21	MNK
+22	WAR
+23	DRG
+24	BRD
+25	WHM
+26	BLM
+27	ACN
+28	SMN
+29	SCH
+30	Disciple of War
+31	Disciple of Magic
+32	Disciple of the Land
+33	Disciple of the Hand
+34	Disciples of War or Magic
+35	Disciples of the Land or Hand
+36	Any Disciple of War (excluding gladiators)
+37	GLA PGL MRD LNC ARC ROG CNJ THM ACN PLD WAR DRK
+38	GLA PLD
+39	GLA PGL MRD LNC ARC ROG PLD WAR DRK
+40	GLA PGL MRD LNC ARC ROG CNJ THM ACN MNK WAR DRG BRD NIN
+41	PGL MNK
+42	GLA PGL MRD LNC ARC ROG MNK WAR DRG BRD NIN
+43	GLA PGL MRD LNC ARC ROG CNJ THM ACN PLD MNK WAR DRG DRK
+44	MRD WAR
+45	GLA PGL MRD LNC ARC ROG PLD MNK WAR DRG DRK
+46	GLA PGL MRD LNC ARC ROG CNJ THM ACN MNK DRG BRD NIN MCH
+47	LNC DRG
+48	GLA PGL MRD LNC ARC ROG MNK DRG BRD NIN MCH
+49	GLA PGL MRD LNC ARC ROG CNJ THM ACN BRD BLM SMN MCH
+50	ARC BRD
+51	GLA PGL MRD LNC ARC ROG BRD MCH
+52	GLA PGL MRD LNC ARC ROG CNJ THM ACN PLD WHM SCH AST
+53	CNJ WHM
+54	GLA PGL MRD LNC ARC ROG CNJ THM ACN WHM BLM SMN SCH AST
+55	THM BLM
+56	GLA CNJ THM PLD WHM BLM
+57	GLA THM PLD BLM
+58	GLA CNJ PLD WHM
+59	GLA MRD PLD WAR DRK GNB
+60	GLA MRD LNC PLD WAR DRG DRK GNB
+61	CNJ THM ACN WHM SCH AST
+62	CNJ THM ACN WHM BLM SMN SCH AST
+63	THM ACN BLM SMN RDM BLU
+64	CNJ WHM SCH AST
+65	PGL MNK SAM
+66	ARC BRD MCH DNC
+67	GLA PGL MRD LNC ROG MNK DRG NIN
+68	ACN SMN SCH
+69	ACN SMN
+70	Any Disciple of the Hand (excluding culinarians)
+71	GLA PGL MRD LNC ARC ROG CNJ THM ACN WHM BLM SMN SCH
+72	CNJ THM ACN WHM BLM SMN SCH
+73	CNJ WHM SCH AST
+74	
+75	
+76	
+77	
+78	
+79	
+80	
+81	
+82	
+83	
+84	PGL LNC MNK DRG SAM
+85	GLA MRD PLD WAR DRK
+86	PGL LNC MNK DRG
+87	GLA MRD PGL LNC ROG PLD MNK WAR DRG NIN
+88	GLA MRD PGL LNC ARC ROG PLD MNK WAR DRG BRD NIN MCH
+89	CNJ THM ACN WHM BLM SMN SCH AST
+90	ARC CNJ THM ACN WHM BRD BLM SMN SCH MCH AST
+91	ROG
+92	NIN
+93	ROG NIN
+94	GLA PGL MRD LNC ARC ROG NIN
+95	GLA PGL MRD LNC ROG NIN
+96	MCH
+97	PGL LNC ARC ROG MNK DRG BRD NIN MCH
+98	DRK
+99	AST
+100	ARC ROG BRD NIN MCH
+101	PGL LNC ROG MNK DRG NIN
+102	PGL ROG MNK NIN SAM
+103	ROG NIN
+104	
+105	ARC ROG BRD NIN MCH DNC
+106	GLA MRD PGL LNC ARC ROG BRD
+107	PLD MNK WAR DRG BRD WHM BLM SMN SCH NIN MCH DRK AST
+108	Disciples of War or Magic
+109	
+110	Jobs of the Disciples of War or Magic
+111	SAM
+112	RDM
+113	GLA MRD PLD WAR DRK GNB
+114	PGL LNC ROG MNK DRG NIN SAM
+115	ARC BRD MCH DNC
+116	THM ACN BLM SMN RDM BLU
+117	CNJ WHM SCH AST
+118	PGL LNC ARC ROG MNK DRG BRD NIN MCH SAM DNC
+119	PGL LNC THM ACN ROG MNK DRG BLM SMN NIN SAM RDM BLU
+120	CNJ THM ACN WHM BLM SMN SCH AST RDM BLU
+121	PLD WAR DRK GNB
+122	MNK DRG NIN SAM
+123	BRD MCH DNC
+124	BLM SMN RDM BLU
+125	WHM SCH AST
+126	MNK DRG BRD NIN MCH SAM DNC
+127	MNK DRG BLM SMN NIN SAM RDM BLU
+128	WHM BLM SMN SCH AST RDM BLU
+129	BLU
+130	All classes and jobs (excluding limited jobs)
+131	MNK DRG BRD BLM SMN NIN MCH SAM RDM DNC
+132	MNK DRG BRD WHM BLM SMN SCH NIN MCH AST SAM RDM DNC
+133	WHM SCH AST
+134	PLD WAR DRK GNB
+135	PLD MNK WAR DRG BRD BLM SMN NIN MCH DRK SAM RDM GNB DNC
+136	PLD WAR WHM SCH DRK AST GNB
+137	PLD MNK WAR DRG BRD WHM BLM SMN SCH NIN MCH DRK AST SAM RDM GNB DNC
+138	PLD MNK WAR DRG NIN DRK SAM GNB
+139	BRD MCH DNC
+140	WHM BLM SMN SCH AST RDM
+141	PLD MNK WAR DRG BRD WHM BLM SMN SCH MCH DRK AST SAM RDM GNB DNC
+142	Any Disciple of War or Magic (excluding limited jobs)
+143	Disciples of War (excluding limited jobs)
+144	Any Disciple of Magic (excluding limited jobs)
+145	PLD MNK WAR DRG BRD NIN MCH DRK SAM GNB DNC
+146	Any job of the Disciples of War or Magic (excluding limited jobs)
+147	BLM SMN RDM
+148	MNK DRG NIN SAM
+149	GNB
+150	DNC
+151	Facet of Forging (BSM, ARM, GSM)
+152	Facet of Crafting (CRP, LTW, WVR)
+153	Facet of Nourishing (ALC, CUL)
+154	Facet of Gathering (MIN, BTN)
+155	Facet of Fishing (FSH)
+156	Tank (excluding limited jobs)
+157	Healer (excluding limited jobs)
+158	Physical DPS (excluding limited jobs)
+159	Magical DPS (excluding limited jobs)
+160	ACN SCH
+161	GLA PGL MRD LNC ARC PLD MNK WAR DRG BRD ROG NIN MCH DRK SAM GNB DNC
+
