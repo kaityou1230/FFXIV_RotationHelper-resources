@@ -1,7 +1,7 @@
-DBIdx,GameIdx,description
-802,7423,Aetherpact for smn
-12021,7437,Aetherpact for sch
-12149,167,Energy Drain for sch
-167,16508,Energy Drain for acn and smn
+GameIdx,DBIdx,description
+7423,802,Aetherpact for smn
+7437,12021,Aetherpact for sch
+167,12149,Energy Drain for sch
+16508,167,Energy Drain for acn and smn
 172,172,Ruin II for acn and smn
-172,17870,Ruin II for sch
+17870,172,Ruin II for sch
