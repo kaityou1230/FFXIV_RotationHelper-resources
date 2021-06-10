@@ -12,7 +12,7 @@ namespace FFXIV_RotationHelper_resources
 
 		void Initialize(const std::string& str, int strSize);
 
-		std::string operator[](int i) const;
+		const std::string& operator[](int i) const;
 
 		int GetCount() const;
 

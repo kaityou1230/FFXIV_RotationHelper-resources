@@ -86,14 +86,10 @@ void ActionTableViewer::Edit(const ClassJob& classJob)
 			// if input string was not numbers, insert again
 		} while (!isNumber(dbIdx));
 
-		csv->Write('\"');
 		csv->Write(classJob.GetFullName());
-		csv->Write('\"');
 		csv->Write(',');
 
-		csv->Write('\"');
 		csv->Write(row[(int)ActionField::Name]);
-		csv->Write('\"');
 		csv->Write(',');
 
 		csv->Write(row[(int)ActionField::Key]);

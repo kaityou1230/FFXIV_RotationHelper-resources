@@ -14,42 +14,27 @@ void SplitedString::Initialize(const std::string& str, int strSize)
 	int i = 0;
 	for (; i < strSize; i++)
 	{
-		if (bQuote && str[i] == '\"')
+		if (str[i] == '\"')
 		{
-			bQuote = false;
-
-			std::string substr;
-			substr.assign(str.begin() + offset, str.begin() + i);
-			s.push_back(substr);
-
-			i++;
-			offset = i + 1;
-		}
-		else if (!bQuote && str[i] == '\"')
-		{
-			bQuote = true;
-
-			offset = i + 1;
+			bQuote = !bQuote;
 		}
 		else if (!bQuote && str[i] == ',')
 		{
 			std::string substr;
 			substr.assign(str.begin() + offset, str.begin() + i);
 			s.push_back(substr);
-			
+
 			offset = i + 1;
 		}
 	}
 
-	if (offset < i)
-	{
-		std::string substr;
-		substr.assign(str.begin() + offset, str.begin() + i);
-		s.push_back(substr);
-	}
+	// add last field 
+	std::string substr;
+	substr.assign(str.begin() + offset, str.begin() + i);
+	s.push_back(substr);
 }
 
-std::string SplitedString::operator[](int i) const
+const std::string& SplitedString::operator[](int i) const
 {
 	assert((size_t)i >= 0 && (size_t)i < s.size());
 
