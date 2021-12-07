@@ -2,7 +2,7 @@
 
 namespace FFXIV_RotationHelper_resources
 {
-	//https://github.com/xivapi/ffxiv-datamining/blob/master/csv/Action.csv
+	// https://github.com/xivapi/ffxiv-datamining/blob/master/csv/Action.csv
 	enum class ActionField
 	{
 		Key					= 0,
@@ -12,8 +12,8 @@ namespace FFXIV_RotationHelper_resources
 		ClassJobLevel		= 13,
 		IsRoleAction		= 14,
 		Range				= 15,
-		ClassJobCategory	= 49,
-		IsPvP				= 54,
-		IsPlayerAction		= 66,
+		ClassJobCategory	= 50,
+		IsPvP				= 56,
+		IsPlayerAction		= 68,
 	};
 }

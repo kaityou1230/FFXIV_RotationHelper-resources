@@ -15,12 +15,13 @@ namespace FFXIV_RotationHelper_resources
 		DoH_Ability = 7,
 		Event = 8,
 		Limit_Break = 9,
-		System = 10,
-		Artillery = 11,
+		System_1 = 10,
+		System_2 = 11,
 		Mount = 12,
 		Special = 13,
 		Item_Manipulation = 14,
 		Adrenaline_Rush = 15,
 		Unknown = 16,
+		Artillery = 17,
 	};
 }

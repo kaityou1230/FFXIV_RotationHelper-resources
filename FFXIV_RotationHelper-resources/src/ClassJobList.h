@@ -5,7 +5,7 @@ namespace FFXIV_RotationHelper_resources
 	class ClassJob;
 	class WebReader;
 
-	constexpr int ClassJobCount = 17;
+	constexpr int ClassJobCount = 19;
 
 	class ClassJobList
 	{

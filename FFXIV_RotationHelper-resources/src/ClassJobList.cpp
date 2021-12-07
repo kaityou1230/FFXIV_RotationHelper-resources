@@ -3,6 +3,7 @@
 #include <string>
 
 #include "ClassJob.h"
+#include "ClassJobColumn.h"
 #include "SplitedString.h"
 #include "WebReader.h"
 
@@ -40,31 +41,33 @@ ClassJobList::ClassJobList(const WebReader& webReader)
 	jobs = new ClassJob[ClassJobCount]
 	{
 		// Tank
-		{ "PLD", "Paladin", webReader },
-		{ "WAR", "Warrior", webReader },
-		{ "DRK", "Dark Knight", webReader },
-		{ "GNB", "Gunbreaker", webReader },
+		{ ClassJobColumn::PLD, "Paladin", webReader },
+		{ ClassJobColumn::WAR, "Warrior", webReader },
+		{ ClassJobColumn::DRK, "Dark Knight", webReader },
+		{ ClassJobColumn::GNB, "Gunbreaker", webReader },
 
 		// Healer
-		{ "WHM", "White Mage", webReader },
-		{ "SCH", "Scholar", webReader },
-		{ "AST", "Astrologian", webReader },
+		{ ClassJobColumn::WHM, "White Mage", webReader },
+		{ ClassJobColumn::SCH, "Scholar", webReader },
+		{ ClassJobColumn::AST, "Astrologian", webReader },
+		{ ClassJobColumn::SGE, "Sage", webReader },
 
 		// Melee DPS
-		{ "MNK", "Monk", webReader },
-		{ "DRG", "Dragoon", webReader },
-		{ "NIN", "Ninja", webReader },
-		{ "SAM", "Samurai", webReader },
+		{ ClassJobColumn::MNK, "Monk", webReader },
+		{ ClassJobColumn::DRG, "Dragoon", webReader },
+		{ ClassJobColumn::NIN, "Ninja", webReader },
+		{ ClassJobColumn::SAM, "Samurai", webReader },
+		{ ClassJobColumn::RPR, "Reaper", webReader },
 
 		// Ranged DPS
-		{ "BRD", "Bard", webReader },
-		{ "MCH", "Machinist", webReader },
-		{ "DNC", "Dancer", webReader },
+		{ ClassJobColumn::BRD, "Bard", webReader },
+		{ ClassJobColumn::MCH, "Machinist", webReader },
+		{ ClassJobColumn::DNC, "Dancer", webReader },
 
 		// Caster
-		{ "BLM", "Black Mage", webReader },
-		{ "SMN", "Summoner", webReader },
-		{ "RDM", "Red Mage", webReader },
+		{ ClassJobColumn::BLM, "Black Mage", webReader },
+		{ ClassJobColumn::SMN, "Summoner", webReader },
+		{ ClassJobColumn::RDM, "Red Mage", webReader },
 	};
 }
 
