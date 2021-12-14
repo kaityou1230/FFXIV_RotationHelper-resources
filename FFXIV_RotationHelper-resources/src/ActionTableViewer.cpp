@@ -33,6 +33,7 @@ void ActionTableViewer::Print(const ClassJob& classJob) const
 {
 	std::cout << classJob.GetFullName() << std::endl;
 
+	int rowCount = 0;
 	int actionCount = actionTable->GetCount();
 	for (int i = actionTableRowStart; i < actionCount; i++)
 	{
@@ -44,9 +45,10 @@ void ActionTableViewer::Print(const ClassJob& classJob) const
 		}
 
 		printRow(row);
+		rowCount++;
 	}
 
-	std::cout << std::endl;
+	std::cout << "Row Count : " << rowCount << std::endl << std::endl;
 }
 
 void ActionTableViewer::Edit(const ClassJob& classJob)

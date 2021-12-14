@@ -8,7 +8,8 @@
 using namespace FFXIV_RotationHelper_resources;
 
 ClassJob::ClassJob(ClassJobColumn column, const std::string& _fullName, const WebReader& webReader)
-	: fullName(_fullName)
+	: classJobType(column)
+	, fullName(_fullName)
 {
 	categoryCount = stoi(webReader.Get(webReader.GetCount() - 1)[0]) + 1;
 	category = new bool[categoryCount] { false, };
@@ -34,6 +35,11 @@ ClassJob::~ClassJob()
 	{
 		delete[] category;
 	}
+}
+
+ClassJobColumn ClassJob::GetClassJobType() const
+{
+	return classJobType;
 }
 
 const std::string& ClassJob::GetFullName() const

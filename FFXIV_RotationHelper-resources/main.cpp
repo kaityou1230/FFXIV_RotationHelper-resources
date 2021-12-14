@@ -25,8 +25,7 @@ int main()
 
 	for (const ClassJob& classJob : *classJobList)
 	{
-		//if (classJob.GetShortName() == "WAR" ||
-		//	classJob.GetShortName() == "WHM")
+		//if (classJob.GetClassJobType() == ClassJobColumn::RDM)
 		//{
 		//	viewer.Edit(classJob);
 		//}

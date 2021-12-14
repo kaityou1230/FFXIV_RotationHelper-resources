@@ -15,11 +15,14 @@ namespace FFXIV_RotationHelper_resources
 
 		~ClassJob();
 
+		ClassJobColumn GetClassJobType() const;
+
 		const std::string& GetFullName() const;
 
 		bool IsClassJobCategory(int field) const;
 
 	private:
+		ClassJobColumn classJobType;
 		std::string fullName;
 		int categoryCount;
 		bool* category;
