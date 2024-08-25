@@ -1,1 +1,1 @@
-﻿https://ffxivrotations.com/db10.json
+﻿https://ffxivrotations.com/db.json
